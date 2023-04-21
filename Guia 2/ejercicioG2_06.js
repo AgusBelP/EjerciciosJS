@@ -10,28 +10,28 @@ let porc4 = 2.8/100;
 
 if(sueldo <20000){
     if(edad<=30){
-        console.log(`El valor del aporte es de $${Math.round(sueldo*porc1*1.3)}`)
+        aporte = Math.round(sueldo*porc1*1.3)
     }else{
-        console.log(`El aporte es de $${Math.round(`${sueldo*porc1}`)}`)
+        aporte = Math.round(sueldo*porc1)
     }
 }else if(20000 < sueldo && sueldo < 29999){
     if(edad<=30){
-        console.log(`El valor del aporte es de $${Math.round(`${sueldo*porc2*1.3}`)}`)
+        aporte = Math.round(sueldo*porc2*1.3)
     }else{
-        console.log(`El aporte es de $${Math.round(`${sueldo*porc2}`)}`)
+        aporte = Math.round(sueldo*porc2)
     }
 }else if(30000 < sueldo && sueldo < 39999){
     if(edad<=30){
-        console.log(`El valor del aporte es de $${Math.round(`${sueldo*porc3*1.3}`)}`)
+        aporte = Math.round(sueldo*porc3*1.3)
     }else{
-        console.log(`El aporte es de $${Math.round(`${sueldo*porc3}`)}`)
+        aporte = Math.round(sueldo*porc3)
     }
 }else if(edad<=30){
-        console.log(`El valor del aporte es de $${Math.round(`${sueldo*porc4*1.3}`)}`)
+        aporte = Math.round(sueldo*porc4*1.3)
     }else{
-        console.log(`El aporte es de $${Math.round(`${sueldo*porc4}`)}`)
+        aporte = Math.round(sueldo*porc4)
     }
 
-
+console.log(`El valor del aporte es de $${aporte}`)
 
 
