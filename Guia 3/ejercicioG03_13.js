@@ -2,19 +2,31 @@
 /* 13) Realizá un programa que permita al usuario ingresar números hasta que se introduzca un 0. La computadora debe mostrar el número máximo y el número mínimo.
 */
 
+
 let num;
-let numeros = [1,2,3]
+let min;
+let max;
+let i = 0;
 
-numeros.push(4);
+do{
+    num = Number(prompt("Por favor introduzca un número"));
+    if(i===0){
+        min = num;
+        max = num;
+    }else{
+        if(num>max){
+            max = num;
+        }else if(min>num && num != 0){
+            min = num;
+                }else{
+                    min = min;
+                    max = max;
+                }
+    }
+    i+=1;
+}while(num!=0)
 
-/* do{
-    num = parseInt(prompt("Por favor introduzca un número"))
-    numeros.push(num)
+console.log(`El máximo ingresado es ${max} y el mínimo ingresado es ${min}`);
 
-}while(num!= 0) */
 
-let max = Math.max(numeros)
-let min = Math.min(numeros)
-console.log(max);
-/* console.log(`El máximo número ingresado es ${max} y el mínimo es ${min}`); */
 
