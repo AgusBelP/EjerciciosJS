@@ -1,12 +1,10 @@
-let numA= Number(prompt("Ingrese un número"))
-let numB= Number(prompt("Ingrese otro número"))
+precios = [100, 50, 13, 22, 84, 293]
 
-function validate(a,b){
-    if(a>b){
-        return a+b;
-    }
-}
+console.log(precios.sort((a,b) => b-a));
 
-console.log(validate(numA, numB));
+frutas = ["Manzana", "Banana", "Pera"]
 
-console.log(validate((validate(numA, numB)), 50));
+frutas.forEach(fruta => {
+    console.log(fruta);
+
+});
